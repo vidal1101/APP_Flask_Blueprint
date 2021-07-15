@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block content %} {{ super() }}
+
+
+<div class="fixed-top text-center bg-secondary">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/inicio">Menú Principal</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="/#inventario"> Reservar Habitación <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/#usuarios"> Clientes <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/#clientes">Habitaciones <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/#proveedores">Reservaciones <span class="sr-only">(current)</span></a>
+                </li>
+
+            </ul>
+        </div>
+
+            <li class="float-right">
+                <!--el btn swiht de color oscuro -->
+                <button class="switch" id="switch">
+                     <span><i class="fas fa-sun"></i></span>
+                     <span><i class="fas fa-moon"></i></span>
+                </button>
+            </li>
+
+    </nav>
+
+</div>
+{% endblock %}
+
+

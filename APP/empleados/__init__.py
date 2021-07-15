@@ -3,6 +3,6 @@
 from flask import Blueprint
 
 # creacion de objeto blueprint 
-equipo = Blueprint('equipo', __name__, template_folder='templates')
+empleados = Blueprint('empleados', __name__, template_folder='templates')
 
 from . import routes

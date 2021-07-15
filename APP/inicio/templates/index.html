@@ -1,96 +1,147 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Inicio </title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-</head>
-<body>
-    
-    <div class="container-fluid">
-        
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Flask-Blueprint</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/equipo">Equipo</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/productos">Productos</a>
-                  </li>
-
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
+{% extends "navbar.html" %} {% block content %} {{ super() }}
 
 
-          <br>
+<div class="container-fluid mt-5">
 
-          <!-- cartas -->
-          <div class="row">
+  <br>
 
-            <div class="col-auto col-md-12 col-lg-4">
+  <div class="jumbotron jumbotron-fluid col-md-10 mx-auto">
 
-                <div class="card" style="width: 20rem;">
-                    <img src="https://gifimage.net/wp-content/uploads/2017/10/mision-gif-12.gif" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Mision de la empresa</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
- 
-            </div>
-
-            <div class="col-auto col-md-12 col-lg-4">
-
-                <div class="card" style="width: 18rem;">
-                    <img src="https://rccghouston.org/wp-content/uploads/2016/05/vision.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
- 
-            </div>
-
-
-            <div class="col-auto col-md-12 col-lg-4">
-
-                <div class="card" style="width: 18rem;">
-                    <img src="https://comohacerpara.com/imgl/18061-plantear-objetivo-redactar-pasos_l.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
- 
-            </div>
-
-          </div>
-
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner ">
+        <div class="carousel-item active opacity-1 " >
+          <img src="https://i.ytimg.com/vi/fqk1T7sjVCs/maxresdefault.jpg" class="d-block w-100 opacity-3" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://5241e237e8ca89f68ae3-93af0715f0ee41f3c44620e30f2e5f01.ssl.cf1.rackcdn.com/properties/photos/1562788955038444.jpg"
+           class="d-block w-100 opacity-3" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://cdn.propertiesincostarica.com/properties/Images/turn-key-rental-business/opt/SAM_0283.jpg" 
+          class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    
 
-</body>
-</html>
+
+  </div>
+
+  <!--primer fila de 3 cartas, opciones basicas-->
+  <div class="row">
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card mx-auto" style="width: 23rem; margin: 5px;">
+        <div class="row no-gutters">
+          <img src="https://www.inspirulina.com/wp-content/uploads/shutterstock_671285021.jpg" alt="IMAGEN"
+            class="col-5 card-img p-3">
+          <div class="col-7 card-body">
+            <h5 class="card-title"> Empleados </h5>
+            <p class="card-text">
+              Consultar, crear, eliminar o modificar empleados.
+            </p>
+            <a href="/equipo" class="btn btn-primary">Acceder</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="card mx-auto" style="width: 23rem; margin: 5px;">
+        <div class="row no-gutters">
+          <img src="http://www.hotelpresidente.com.bo/images/slider-hsimple-1.jpg" alt="IMAGEN"
+            class="col-5 card-img p-3">
+          <div class="col-7 card-body">
+            <h5 class="card-title"> Reservar Habitaciónes </h5>
+            <p class="card-text">
+              Realizar reservas de habitaciones.
+            </p>
+            <a href="#" class="btn btn-primary">Acceder</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-12 col-md-4 col-lg-4">
+      <div class="card mx-auto" style="width: 23rem; margin: 5px;">
+        <div class="row no-gutters">
+          <img src="https://www.turismo360.news/wp-content/uploads/2017/12/recepcion.jpg" alt="IMAGEN"
+            class="col-5 card-img p-3">
+          <div class="col-7 card-body">
+            <h5 class="card-title"> Clientes </h5>
+            <p class="card-text">
+              Consultar, crear, eliminar o modificar clientes.
+            </p>
+            <a href="#" class="btn btn-primary">Acceder</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+
+
+<!--segunda fila de 2 cartas, opciones basicas-->
+
+<div class="row">
+
+  <div class="col-12 col-md-6 col-md-auto col-lg-6">
+    <div class="card mx-auto" style="width: 23rem; margin: 5px;">
+      <div class="row no-gutters">
+        <img src="https://d1mrtjpezxphht.cloudfront.net/wp-content/uploads/2019/09/hoteles.jpg" alt="IMAGEN"
+          class="col-5 card-img p-3">
+        <div class="col-7 card-body">
+          <h5 class="card-title"> Reservaciones </h5>
+          <p class="card-text">
+            Ver todas las reservaciones y sus detalles de los servicios.
+          </p>
+          <a href="#" class="btn btn-primary">Acceder</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-6">
+    <div class="card mx-auto" style="width: 23rem; margin: 5px;">
+      <div class="row no-gutters">
+        <img src="https://www.stanzahotel.com/wp-content/uploads/2018/09/ecilla2.jpg" alt="IMAGEN"
+          class="col-5 card-img p-3">
+        <div class="col-7 card-body">
+          <h5 class="card-title"> Habitaciones </h5>
+          <p class="card-text">
+            Consultar, crear, eliminar o modificar Habitaciones.
+          </p>
+          <a href="#" class="btn btn-primary">Acceder</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+</div>
+
+{% endblock %}
